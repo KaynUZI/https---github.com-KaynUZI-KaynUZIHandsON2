@@ -1,0 +1,142 @@
+/* style.css */
+
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.9;
+    background-color: #f0f0f0;
+    background-image: url("../img/Card\ 4\ gif.gif"); /* Path to your background image */
+    background-size: cover; /* Cover the entire background */
+    background-position: center top; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+}
+
+/* Header styles */
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav ul li a.active {
+    color: #ffcc00; /* Active link color */
+}
+
+/* Main content container */
+.main-content {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex; /* Enable flexbox layout */
+}
+
+/* Hero image */
+.hero {
+    flex: 1; /* Take 1/3 of the available space */
+    margin-right: 20px; /* Add spacing between hero and content */
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Content section */
+.content {
+    flex: 2; /* Take 2/3 of the available space */
+}
+
+/* Description */
+.description {
+    margin-top: 20px;
+}
+
+.description h3 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.description p {
+    color: #666;
+    line-height: 1.8;
+}
+
+/* Quote */
+.quote {
+    margin-top: 20px;
+}
+
+.quote blockquote {
+    font-style: italic;
+    color: #666;
+    border-left: 4px solid #333;
+    padding-left: 15px;
+}
+
+.quote cite {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #999;
+}
+
+/* Additional information */
+.additional-info {
+    margin-top: 20px;
+}
+
+.additional-info h3 {
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.additional-info p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.button {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #555;
+}

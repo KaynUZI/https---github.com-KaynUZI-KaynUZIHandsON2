@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-size: cover;
+  background-image: url(../img/Background\ picture\ 2.jpg);
+  background-repeat: repeat;
+  background-position: center;
+  color: var(--color-primary-1);
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header nav {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.header nav ul a {
+  color: white;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.header nav ul a:hover {
+  transform: scale(1.1);
+  background-color: rgba(255, 255, 255, 0.2);
+  color: black;
+}
+
+.hero {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+.hero-content {
+  max-width: 800px;
+  padding: 20px;
+  margin-top: 50px; /* Adjust as needed to avoid overlap with header */
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.hero-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer .footer-text {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.footer .footer-year {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.footer .footer-description {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 5px;
+}
+
+.card {
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 0;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 10px;
+  background: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.btn:hover {
+  box-shadow: 0 0 10px #333;
+}
+
+.static-card img:hover {
+  transform: scale(1.1);
+  transition: transform 0.5s ease-in-out;
+}
+
+.animated-card {
+  perspective: 1000px;
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+.animated-card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  backface-visibility: hidden;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+}
+
+.animated-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+}

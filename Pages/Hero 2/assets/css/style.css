@@ -1,0 +1,112 @@
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling for the hero section */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 20px;
+}
+
+.hero .background {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.hero .background .toxic {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.hero .background .partial-color {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.hero .content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    margin-top: -800px; /* Adjust as needed */
+    z-index: 1;
+}
+
+.hero .left img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hero .right {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.hero .container {
+    text-align: center;
+}
+
+.hero .container .name {
+    font-size: 36px;
+    margin: 20px 0;
+}
+
+.hero .container .name span {
+    color: #ffffff; /* Adjust color as needed */
+}
+
+.hero .container .message {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.hero .container .content {
+    color: #ffffff;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.hero .container img {
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.hero .container .account {
+    display: inline-block;
+    color: #007bff; /* Adjust color as needed */
+    text-decoration: none;
+    font-weight: bold;
+}
+.hero-1, .hero-2, .hero-3, .hero-4, .hero-5 {
+    border: 2px solid #000; /* Adjust color as needed */
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    background-color: #278cbb;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: url('../img/Background\ 2.jpg');
+    background-size: cover;
+  }

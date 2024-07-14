@@ -1,0 +1,115 @@
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling for the hero background */
+.hero-background {
+    background-image: url(../img/Background%201.jpg);
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+/* Header styling */
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header .btn {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.header .btn.active {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Contents section */
+.contents {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.contents .top {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contents .middle {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contents .card {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+}
+
+.contents .card .title {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.contents .card .description {
+    color: #ccc;
+}
+
+.contents .bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.contents .creators {
+    text-align: center;
+}
+
+.contents .creators p {
+    margin-bottom: 5px;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+}
+
+.card-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #111;
+    color: #fff;
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
